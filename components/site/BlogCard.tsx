@@ -37,7 +37,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
         <h3 className="mt-3 font-serif text-lg font-bold leading-snug text-navy-900 transition-colors group-hover:text-gold-700">
           {post.title}
         </h3>
-        <p className="mt-3 flex-1 text-sm leading-relaxed text-navy-600">
+        <p className="mt-3 flex-1 line-clamp-3 text-sm leading-relaxed text-navy-600">
           {post.excerpt}
         </p>
         <div className="mt-5 flex items-center justify-between border-t border-navy-100 pt-4">

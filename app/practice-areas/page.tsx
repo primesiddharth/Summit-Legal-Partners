@@ -119,15 +119,15 @@ const PRACTICE_IMAGES: Record<string, string> = {
   'civil-litigation':
     'https://images.pexels.com/photos/7876144/pexels-photo-7876144.jpeg?auto=compress&cs=tinysrgb&w=1200',
   'criminal-defense':
-    'https://images.pexels.com/photos/8111892/pexels-photo-8111892.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    'https://imgs.search.brave.com/GIZDfsOdPWRwpIgs1Uq-QwI5SgPyKdL7pj251zbUKsM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzg1Lzc5LzY0/LzM2MF9GXzExODU3/OTY0NjdfNWpkZFY1/b2hUd1Q1Z0FaYXQ1/aEtkZjBmUDIzUmF3/UnAuanBn',
   'family-law':
-    'https://images.pexels.com/photos/7876203/pexels-photo-7876203.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    'https://images.pexels.com/photos/8112231/pexels-photo-8112231.jpeg',
   'property-real-estate':
-    'https://images.pexels.com/photos/7876050/pexels-photo-7876050.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    'https://imgs.search.brave.com/GMrckx0yPMIsauQs_1xFlC1jhvfMosmS3OI-xCcW1sU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA0LzYxLzUwLzIw/LzM2MF9GXzQ2MTUw/MjAyOV8ya1oxSGJu/WDFJQzFjdGdqQkNS/NkJZNG9zUURFZVF1/eC5qcGc',
   'intellectual-property':
     'https://images.pexels.com/photos/8112199/pexels-photo-8112199.jpeg?auto=compress&cs=tinysrgb&w=1200',
-  taxation:
+  'taxation':
     'https://images.pexels.com/photos/7876093/pexels-photo-7876093.jpeg?auto=compress&cs=tinysrgb&w=1200',
   'arbitration-mediation':
-    'https://images.pexels.com/photos/7876088/pexels-photo-7876088.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    'https://imgs.search.brave.com/vPbHj0CQPMbJLvKN1kefyMUXws3mwsB2THgHbM4MkjM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YXJlbmVzc2xhdy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjMvMTAvcG9zdC1p/bW1nZy5wbmc',
 };

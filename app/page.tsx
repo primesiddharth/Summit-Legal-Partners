@@ -37,7 +37,7 @@ export default function Home() {
       <RevealOnScroll />
 
       {/* ============ HERO ============ */}
-      <section className="relative flex min-h-[100vh] items-center overflow-hidden bg-navy-950">
+      <section className="relative flex min-h-[100vh] justify-center overflow-hidden bg-navy-950">
         {/* Background image */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -52,15 +52,15 @@ export default function Home() {
         <div className="relative mx-auto w-full max-w-7xl px-4 pt-32 pb-20 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span
-              className="mb-5 inline-flex animate-fade-in items-center gap-2 rounded-full border border-gold-400/30 bg-gold-400/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gold-400"
+              className="mb-3 inline-flex animate-fade-in items-center gap-2 rounded-full border border-gold-400/30 bg-gold-400/10 px-4 py-1.5 text-[8px] font-semibold uppercase tracking-[0.2em] text-gold-400"
               style={{ animationDelay: '0.1s', opacity: 0 }}
             >
-              <Scale className="h-3.5 w-3.5" />
+              <Scale className="h-2 w-2" />
               Trusted Legal Counsel Since {FIRM.founded}
             </span>
 
             <h1
-              className="animate-fade-up font-serif text-4xl font-bold leading-[1.1] text-white sm:text-5xl lg:text-6xl xl:text-7xl"
+              className="animate-fade-up font-serif text-4xl font-bold leading-[1.1] text-white sm:text-5xl lg:text-6xl"
               style={{ animationDelay: '0.2s', opacity: 0 }}
             >
               Counsel Built on Trust.
@@ -213,7 +213,7 @@ export default function Home() {
               <div className="relative overflow-hidden rounded-2xl">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://images.pexels.com/photos/7876197/pexels-photo-7876197.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  src="https://images.pexels.com/photos/7875996/pexels-photo-7875996.jpeg"
                   alt="Legal professionals in consultation"
                   className="aspect-[4/3] w-full object-cover"
                 />

@@ -1,26 +1,27 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
-import PageHero from '@/components/site/PageHero';
-import SectionHeading from '@/components/site/SectionHeading';
-import BlogCard from '@/components/site/BlogCard';
-import CtaBand from '@/components/site/CtaBand';
-import RevealOnScroll from '@/components/site/RevealOnScroll';
-import { BLOG_POSTS } from '@/lib/data';
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import PageHero from "@/components/site/PageHero";
+import SectionHeading from "@/components/site/SectionHeading";
+import BlogCard from "@/components/site/BlogCard";
+import CtaBand from "@/components/site/CtaBand";
+import RevealOnScroll from "@/components/site/RevealOnScroll";
+import { BLOG_POSTS } from "@/lib/data";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: "Blog",
   description:
-    'Legal insights and analysis from the partners of Summit Legal Partners — covering corporate, litigation, real estate, IP, tax, and family law.',
+    "Legal insights and analysis from the partners of Summit Legal Partners — covering corporate, litigation, real estate, IP, tax, and family law.",
 };
 
 export default function BlogPage() {
   const categories = Array.from(new Set(BLOG_POSTS.map((p) => p.category)));
   const [featured, ...rest] = BLOG_POSTS;
-  const date = new Date(featured.date).toLocaleDateString('en-IN', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
+  const date = new Date(featured.date).toLocaleDateString("en-IN", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
   });
 
   return (
@@ -31,7 +32,7 @@ export default function BlogPage() {
         title="Analysis from Our Partners"
         description="Guidance and commentary on the legal developments shaping Indian business and personal matters — written by the lawyers who practice them."
         image="https://images.pexels.com/photos/7876088/pexels-photo-7876088.jpeg?auto=compress&cs=tinysrgb&w=1920"
-        crumbs={[{ label: 'Home', href: '/' }, { label: 'Blog' }]}
+        crumbs={[{ label: "Home", href: "/" }, { label: "Blog" }]}
       />
 
       {/* Featured post */}
@@ -83,7 +84,7 @@ export default function BlogPage() {
       <section className="border-y border-navy-100 bg-cream py-8">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-3 px-4 sm:px-6 lg:px-8">
           <span className="text-sm font-semibold text-navy-500">Topics:</span>
-          {['All', ...categories].map((cat) => (
+          {["All", ...categories].map((cat) => (
             <span
               key={cat}
               className="cursor-default rounded-full border border-navy-200 bg-white px-4 py-1.5 text-sm font-medium text-navy-700 transition-colors hover:border-gold-400 hover:text-gold-700"
@@ -97,9 +98,18 @@ export default function BlogPage() {
       {/* All posts */}
       <section className="bg-cream py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="reveal-stagger grid gap-7 md:grid-cols-2 lg:grid-cols-3">
-            {rest.map((post) => (
-              <BlogCard key={post.slug} post={post} />
+          <div className="reveal-stagger grid gap-7 md:grid-cols-6">
+            {rest.map((post, index) => (
+              <div
+                key={post.slug}
+                className={cn(
+                  "md:col-span-2",
+                  index === 3 && "md:col-start-2",
+                  index === 4 && "md:col-start-4",
+                )}
+              >
+                <BlogCard post={post} />
+              </div>
             ))}
           </div>
         </div>

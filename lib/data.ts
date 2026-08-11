@@ -192,7 +192,7 @@ export const LAWYERS: Lawyer[] = [
     name: 'Arjun Mehta',
     role: 'Founding Partner & Senior Counsel',
     image:
-      'https://images.pexels.com/photos/17049771/pexels-photo-17049771.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pexels.com/photos/38889901/pexels-photo-38889901.jpeg',
     bio: 'With over 25 years at the Bar, Arjun Mehta founded Summit Legal Partners on a simple conviction — that rigorous preparation wins cases. He leads the firm’s corporate and appellate practice and has argued landmark matters before the Telangana High Court and the Supreme Court of India.',
     education: [
       'LL.M., Harvard Law School',
@@ -208,7 +208,7 @@ export const LAWYERS: Lawyer[] = [
     name: 'Priya Nair',
     role: 'Managing Partner — Litigation',
     image:
-      'https://images.pexels.com/photos/7581115/pexels-photo-7581115.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://imgs.search.brave.com/O4LPPIwfOJ00z7Q4IgwPPZ7ixE3upmB-9jA2uRBFNpg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzIwLzA0LzMyLzIz/LzM2MF9GXzIwMDQz/MjIzMjlfWmk2NmN5/MlluWmZGTUUxTFlp/NW1yZnJGMTNNSVQ2/bTcuanBn',
     bio: 'Priya Nair heads the litigation practice, bringing strategic precision to complex commercial and civil disputes. Recognized for her incisive cross-examination and calm under pressure, she has secured favorable verdicts in over 200 contested matters.',
     education: [
       'LL.B., NLSIU Bangalore',
@@ -269,7 +269,7 @@ export const LAWYERS: Lawyer[] = [
     name: 'Meera Iyer',
     role: 'Senior Associate — Corporate & Securities',
     image:
-      'https://images.pexels.com/photos/7580944/pexels-photo-7580944.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pexels.com/photos/7581115/pexels-photo-7581115.jpeg?auto=compress&cs=tinysrgb&w=800',
     bio: 'Meera Iyer structures deals and steers compliance for growth-stage and listed companies alike. She is known for drafting that anticipates risk and for her steady hand through SEBI and MCA filings.',
     education: [
       'LL.B., NALSAR University of Law',
@@ -327,7 +327,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       'The High Court ruled in our client’s favor, upholding the contract and dismissing the counterclaim in full. The judgment has since been cited in two subsequent commercial cases.',
     result: 'INR 90 crore recovered',
     image:
-      'https://images.pexels.com/photos/7876197/pexels-photo-7876197.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      'https://images.pexels.com/photos/8899233/pexels-photo-8899233.jpeg',
   },
   {
     slug: 'trademark-enforcement-victory',
@@ -378,7 +378,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       'A binding settlement was reached in seven months, the family business remained intact, and all parties avoided protracted litigation. The resolution was sealed by consent decree.',
     result: 'Private 7-month resolution',
     image:
-      'https://images.pexels.com/photos/7876203/pexels-photo-7876203.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      'https://images.pexels.com/photos/8112231/pexels-photo-8112231.jpeg',
   },
   {
     slug: 'real-estate-title-clearance',
@@ -485,7 +485,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2025-06-30',
     readTime: '6 min read',
     image:
-      'https://images.pexels.com/photos/6077296/pexels-photo-6077296.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      'https://imgs.search.brave.com/_CXs1MOy1JYlKjDxoUku75inBZX7yFoC0Rh7hOuq7XQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZi1p/bWFnZXMuYXNzZXR0/eXBlLmNvbS9vdXRs/b29raW5kaWEvMjAy/Ni0wNS0xNS9zcjdr/MHdtMy9MZWFkLXN0/b3J5LXBpY3R1cmUu/anBlZz9hdXRvPWZv/cm1hdCxjb21wcmVz/cyZmaXQ9bWF4JmZv/cm1hdD13ZWJwJnc9/NzY4JmRwcj0xLjA',
   },
   {
     slug: 'enforcing-arbitration-awards-india',
@@ -533,7 +533,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2025-04-22',
     readTime: '6 min read',
     image:
-      'https://images.pexels.com/photos/7876203/pexels-photo-7876203.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      'https://imgs.search.brave.com/ySbS-vdNbstJMlRYvulbkVsB6B2iSghkxpn4I7rj57A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTU0/NjY3MTI2L3Bob3Rv/L2ZhbWlseS1sYXct/YW5kLWdsYXNzZXMt/b24tYS1jb3VydC10/YWJsZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9TDZ5cDRX/Mzc1U21VVkRSUHht/RGFSWEN1cjRIdEhu/VE81M3BWS2pMZnRK/ST0',
   },
 ];
 

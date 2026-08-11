@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
+import { useState } from "react";
+import Link from "next/link";
 import {
   Scale,
   MapPin,
@@ -14,18 +14,20 @@ import {
   Instagram,
   ArrowRight,
   Check,
-} from 'lucide-react';
-import { FIRM, NAV_LINKS, PRACTICE_AREAS } from '@/lib/data';
+  ArrowUpRight,
+} from "lucide-react";
+import { FIRM, NAV_LINKS, PRACTICE_AREAS } from "@/lib/data";
+import Image from "next/image";
 
 export default function Footer() {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
     setSubscribed(true);
-    setEmail('');
+    setEmail("");
     setTimeout(() => setSubscribed(false), 3500);
   };
 
@@ -81,29 +83,47 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">
         {/* Brand */}
         <div className="lg:col-span-4">
-          <Link href="/" className="flex items-center gap-2.5">
-            <span className="flex h-10 w-10 items-center justify-center rounded-md bg-gradient-to-br from-gold-400 to-gold-600 text-navy-950">
-              <Scale className="h-5 w-5" strokeWidth={2.2} />
-            </span>
-            <span className="flex flex-col leading-none">
-              <span className="font-serif text-lg font-bold text-white">
+          <Link
+            href="/"
+            className="group flex items-center gap-3 pr-2"
+            aria-label="Summit Legal Partners home"
+          >
+            <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-md bg-white shadow-md transition-transform duration-300 group-hover:scale-105">
+              <Image
+                src="/images/logo.jpg"
+                alt="Summit Legal Partners"
+                fill
+                sizes="40px"
+                className="object-cover"
+                priority
+              />
+            </div>
+
+            <div className="flex flex-col leading-none">
+              <span className="font-serif text-sm font-bold text-white">
                 Summit Legal
               </span>
-              <span className="font-sans text-[0.65rem] font-medium uppercase tracking-[0.25em] text-gold-400">
+
+              <span className="mt-1 font-sans text-[0.6rem] font-semibold uppercase tracking-[0.24em] text-gold-400">
                 Partners
               </span>
-            </span>
+            </div>
           </Link>
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-navy-200">
             A premier law firm based in Banjara Hills, Hyderabad — delivering
-            trusted counsel and decisive results across India since {FIRM.founded}.
+            trusted counsel and decisive results across India since{" "}
+            {FIRM.founded}.
           </p>
           <div className="mt-6 flex gap-3">
             {[
-              { icon: Linkedin, href: FIRM.social.linkedin, label: 'LinkedIn' },
-              { icon: Twitter, href: FIRM.social.twitter, label: 'Twitter' },
-              { icon: Facebook, href: FIRM.social.facebook, label: 'Facebook' },
-              { icon: Instagram, href: FIRM.social.instagram, label: 'Instagram' },
+              { icon: Linkedin, href: FIRM.social.linkedin, label: "LinkedIn" },
+              { icon: Twitter, href: FIRM.social.twitter, label: "Twitter" },
+              { icon: Facebook, href: FIRM.social.facebook, label: "Facebook" },
+              {
+                icon: Instagram,
+                href: FIRM.social.instagram,
+                label: "Instagram",
+              },
             ].map((s) => (
               <a
                 key={s.label}
@@ -204,6 +224,21 @@ export default function Footer() {
           <p className="text-navy-400">
             The content on this site is for informational purposes only and does
             not constitute legal advice.
+          </p>
+          {/* Credit */}
+          <p className="flex flex-wrap font-body text-xs text-navy-300 text-muted-foreground items-center justify-center gap-1.5 lg:justify-start">
+            <span>Made with</span>
+            <span className="animate-pulse text-red-500">❤</span>
+            <span>by</span>
+            <a
+              href="https://creyotech.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-1 font-semibold hover:underline  transition-colors duration-300 hover:text-gold-400"
+            >
+              Creyotech IT Services
+              <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </a>
           </p>
         </div>
       </div>
